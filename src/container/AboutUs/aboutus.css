@@ -1,0 +1,83 @@
+.aboutUs {
+  width: 100%;
+  padding: 6rem;
+  position: relative;
+  z-index: 0;
+}
+.aboutUs_overlay {
+  position: absolute;
+  left: 37%;
+  top: 27%;
+  transform: translate(-50% -50%);
+  z-index: -1;
+}
+.aboutUs_overlay img {
+  width: 60%;
+  opacity: 0.8;
+}
+.aboutUs_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  z-index: 1;
+}
+
+.aboutUs_content > img {
+  width: 10.5rem;
+}
+.flex_end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right_text {
+  text-align: right;
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 1440PX) */
+@media screen and (max-width: 1440px) {
+  .aboutUs_overlay {
+    left: 33%;
+    top: 25%;
+  }
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 1200PX) */
+@media screen and (max-width: 1200px) {
+  .aboutUs_overlay {
+    left: 30%;
+    top: 25%;
+  }
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 991PX) */
+@media screen and (max-width: 991px) {
+  .aboutUs_overlay {
+    left: 30%;
+    top: 40%;
+  }
+  .aboutUs_content {
+    flex-direction: column;
+  }
+  .aboutUs_content > img {
+    width: 8.5rem;
+  }
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 768PX) */
+@media screen and (max-width: 768px) {
+  .aboutUs {
+    padding: 6rem 4rem;
+  }
+  .aboutUs_overlay {
+    left: 33%;
+    top: 40%;
+  }
+  .aboutUs_overlay img {
+    width: 50%;
+  }
+  .aboutUs_content > img {
+    width: 6.5rem;
+  }
+}

@@ -1,0 +1,67 @@
+.contact {
+  width: 100%;
+  padding: 6rem 15rem 6rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact_left h1 {
+  margin: 3rem 0 4rem;
+}
+.contact_time > p:nth-child(1) {
+  margin: 3rem 0 4rem;
+  font-size: 2.7rem;
+  color: var(--color-golden);
+  font-family: var(--font-base);
+}
+.contact button {
+  margin-top: 3rem;
+}
+.contact_right {
+  width: 40%;
+  height: auto;
+}
+.contact_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 1200PX) */
+@media screen and (max-width: 1200px) {
+  .contact {
+    padding: 6rem;
+  }
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 991PX) */
+@media screen and (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .contact_right {
+    align-self: center;
+    width: 60%;
+  }
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 650PX) */
+@media screen and (max-width: 650px) {
+  .contact {
+    padding: 4rem;
+  }
+  .contact_left h1 {
+    margin: 1rem 0 2rem;
+  }
+  .contact_right {
+    width: 80%;
+  }
+}

@@ -1,0 +1,111 @@
+.newsLetter {
+  width: 60%;
+  border: 1px solid var(--color-golden);
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+  margin: 0 auto;
+  z-index: 2;
+}
+.newsLetter h1 {
+  margin: 2rem 0 0;
+}
+.newsLetter p {
+  margin-bottom: 2rem;
+}
+.newsLetter-input {
+  display: flex;
+  gap: 2rem;
+}
+.newsLetter-input input {
+  background-color: transparent;
+  width: 55rem;
+  border: 1px solid var(--color-golden);
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  font-family: var(--font-base);
+  color: white;
+}
+.newsLetter-input input:focus {
+  outline: 1px solid var(--color-white);
+}
+
+/* --------MEDIA QUERIES 1440PX------- */
+
+@media screen and (max-width: 1440px) {
+  .newsLetter {
+    width: 70%;
+  }
+  .newsLetter h1 {
+    font-size: 5rem;
+  }
+}
+/* --------MEDIA QUERIES 1200PX------- */
+
+@media screen and (max-width: 1200px) {
+  .newsLetter {
+    width: 80%;
+  }
+  .newsLetter h1 {
+    font-size: 4.5rem;
+  }
+  .newsLetter-input input {
+    width: 45rem;
+  }
+}
+
+/* --------MEDIA QUERIES 991PX------- */
+
+@media screen and (max-width: 991px) {
+  .newsLetter {
+    width: 95%;
+  }
+  .newsLetter h1 {
+    font-size: 4rem;
+  }
+  .newsLetter-input input {
+    width: 40rem;
+  }
+}
+
+/* --------MEDIA QUERIES 768PX------- */
+
+@media screen and (max-width: 768px) {
+  .newsLetter {
+    width: 100%;
+    padding: 3rem 4rem;
+  }
+  .newsLetter h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .newsLetter-input input {
+    width: 35rem;
+  }
+  .newsLetter-input {
+    gap: 1rem;
+  }
+}
+
+/* --------MEDIA QUERIES 650PX------- */
+
+@media screen and (max-width: 650px) {
+  .newsLetter {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  .newsLetter h1 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+  .newsLetter-input {
+    flex-wrap: wrap;
+  }
+  .newsLetter-input input {
+    width: 25rem;
+    padding: 1.5rem 1rem;
+  }
+}

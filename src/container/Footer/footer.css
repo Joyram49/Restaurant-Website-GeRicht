@@ -1,0 +1,157 @@
+.footer {
+  width: 100%;
+  height: 100vh;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 15rem;
+}
+.footer_overlay_black {
+  margin-top: 4rem;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 25%;
+  background: var(--color-black);
+  z-index: 0;
+}
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+}
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact_us h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: var(--font-base);
+  margin-bottom: 1rem;
+}
+.contact_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+.contact_logo-img {
+  width: 30rem;
+  height: auto;
+}
+.contact_logo-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.contact_logo p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact_logo > img {
+  margin-bottom: 2rem;
+}
+.contact_logo-icons {
+  display: flex;
+  gap: 2rem;
+}
+.contact_logo-icon {
+  font-size: 3.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact_logo-icon:hover {
+  color: var(--color-golden);
+}
+.contact_time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_time h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: var(--font-base);
+  margin-bottom: 2rem;
+}
+.contact_time p {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* --------MEDIA QUERIES 1440PX------- */
+
+@media screen and (max-width: 1440px) {
+  .footer {
+    gap: 10rem;
+  }
+  .contact_logo-img {
+    width: 20rem;
+    height: auto;
+  }
+}
+
+/* --------MEDIA QUERIES 1200PX------- */
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: auto;
+  }
+  .footer_content {
+    gap: 2rem;
+  }
+  .contact_logo-img {
+    width: 17rem;
+  }
+}
+
+/* --------MEDIA QUERIES 991PX------- */
+
+@media screen and (max-width: 991px) {
+  .footer {
+    gap: 7rem;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  .contact_logo-img {
+    width: 25rem;
+  }
+  .contact_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* --------MEDIA QUERIES 650PX------- */
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 4rem;
+  }
+  .footer_content {
+    margin-top: 4rem;
+  }
+  .footer_content p {
+    font-size: 14px;
+  }
+  .footer_copyright p {
+    font-size: 14px;
+  }
+}

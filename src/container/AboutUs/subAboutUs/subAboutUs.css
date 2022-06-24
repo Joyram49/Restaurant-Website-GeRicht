@@ -1,0 +1,21 @@
+.subAbout h1 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 6.5rem;
+  margin-bottom: 1rem;
+}
+.subAbout p {
+  opacity: 0.7;
+  margin: 4rem 0;
+  font-size: 16px;
+}
+
+/* --------- MEDIA QUERIES (MAX-WIDTH: 768PX) */
+@media screen and (max-width: 768px) {
+  .subAbout h1 {
+    font-size: 5rem;
+  }
+  .subAbout p {
+    font-size: 14px;
+  }
+}

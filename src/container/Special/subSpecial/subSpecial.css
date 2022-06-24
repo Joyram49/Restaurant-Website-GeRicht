@@ -1,0 +1,49 @@
+.subspecial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.subspecial_1st_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.subspecial_1st_row h2 {
+  font-size: 2.2rem;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  flex: 1;
+}
+.subspecial_1st_row .subspecial_dash {
+  margin-top: 1.3rem;
+  width: 10rem;
+  height: 0.2rem;
+  background-color: var(--color-golden);
+}
+.subspecial_1st_row p {
+  color: var(--color-white);
+  font-size: 2.7rem;
+  margin-left: 2rem;
+}
+.subspecial_2nd_row p {
+  font-size: 2rem;
+  color: var(--color-grey);
+}
+
+/* --------- MEDAI QUERIES (MAX-WIDTH: 1200PX) */
+
+@media screen and (max-width: 1200px) {
+  .subspecial_1st_row h2 {
+    font-size: 2rem;
+  }
+  .subspecial_1st_row .subspecial_dash {
+    width: 7rem;
+  }
+  .subspecial_1st_row p {
+    font-size: 1.8rem;
+  }
+  .subspecial_2nd_row p {
+    font-size: 2rem;
+  }
+}
